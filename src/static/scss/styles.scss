@@ -1,0 +1,31 @@
+@import "variables";
+@import "typography";
+@import "mixins";
+
+@import "src/components/molecules/Message/message";
+@import "src/components/molecules/ChatInput/chat-input";
+
+@import "src/components/organisms/Chat/chat";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  font-family: open-sans, sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #343434; /* Fond de la poignée de la barre de défilement */
+  border-radius: 30px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Fond de la piste de la barre de défilement */
+}
